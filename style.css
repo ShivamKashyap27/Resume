@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 25px 30px;
+    margin: 5px 10px;
+}
+
+header h1 {
+    height: auto;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row; 
+    gap:30%; 
+}
+
+.head, .hero {
+    flex: 1;
+    min-width: 50px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.head p {
+   padding-bottom: 15px;
+   margin-top: -10px;
+}
+
+.head{
+    padding-left: 40px;
+}
+.hero {
+    padding-top: 35px;
+}
+#hr{
+    width: 97%;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid black;
+}
+.hero img {
+    margin-right: 25px;
+}
+
+#project a {
+    color: blue;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .root {
+        flex-direction: column;
+    }
+
+    .head, .hero {
+        min-width: 100%; 
+        margin-top: -10px;
+    }
+    head p{
+       min-width: none;
+    }
+    .hero {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+    .container-box {
+        margin-top: -190px;
+    }
+}
